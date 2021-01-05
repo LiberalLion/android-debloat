@@ -1,4 +1,6 @@
-# Universal Android Debloater
+# Android Debloater
+
+Forked from [https://gitlab.com/W1nst0n/universal-android-debloater](https://gitlab.com/W1nst0n/universal-android-debloater)
 
 **DISCLAIMER**: Use this script at your own risk. I am not responsible for anything that could happen to your phone. 
 
@@ -42,20 +44,15 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gitl
 * [X] Nokia
 * [X] OnePlus
 * [X] Oppo  
+* [ ] Realme  
 * [X] Samsung
 * [X] Sony
 * [ ] TCL
+* [ ] Vivo  
 * [ ] Wiko
 * [X] Xiaomi
 * [ ] ZTE
 
-## Mobile carriers debloat lists 
-|France           | USA      |Germany     |
-|:---------------:|:--------:|:----------:|
-| Orange          | T-Mobile |  Telekom   |
-| SFR             | Verizon  |            |
-| Free            | Sprint   |            |
-| Bouygues / Sosh | AT&T     |            |
 
 ## How to use it 
 - **Read the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ)!**
