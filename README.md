@@ -2,7 +2,7 @@
 
 Forked from [https://gitlab.com/W1nst0n/universal-android-debloater](https://gitlab.com/W1nst0n/universal-android-debloater)
 
-**DISCLAIMER**: Use this script at your own risk. I am not responsible for anything that could happen to your phone. 
+**DISCLAIMER**: Use this script at your own risk. I am not responsible if your phone explodes or your alarm doesn't work and you wake up late.
 
 ## Summary
 I try to maintain a universal tool which removes bloatwares on any Android phones by using ADB.
