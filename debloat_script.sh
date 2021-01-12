@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # BASH 4.3 or newer is needed ! (use of local -n)
+#https://github.com/gamerhat18/android-debloat
+
 if (( BASH_VERSINFO < 5 )); then printf "\n%s\n\n" "Please upgrade to a bash version >= 4.3" && exit 1; fi
 
 if ! adb get-state &>/dev/null; then printf "\n%s\n\n" "Your phone is not detected by ADB." && exit 1; fi
@@ -23,8 +25,9 @@ catch() {
     (( $? == 0 )) && exit 0;
     printf "\n\n${BRED}%s\n" "[EXIT TRAP] Hum... something is wrong."
     printf "\n%s\n" "If you think this is a bug. Please report it :)"
-    printf "%s${NC}\n\n" "==> https://gitlab.com/W1nst0n/universal-android-debloater/-/issues"
+    printf "%s${NC}\n\n" "==> https://github.com/gamerhat18/android-debloat/-/issues"
 }
+
 
 # Include debloat lists
 for file in ./lists/* ; do
@@ -35,7 +38,7 @@ done
 
 main() {
 
-    readonly VERSION="v2.7 (October 4th 2020)"
+    readonly VERSION="v3.0 (January 12th 2021)"
     readonly PAD=$(((48-${#VERSION})/2))
 
     readonly BRAND="$(get_brand)"
@@ -71,7 +74,7 @@ main() {
         clear
         printf "\n${BRED}%s "                       "WARNING : Your android version is too old (< 8.0)."
         printf "%s${NC}\n\n"                        "Uninstalled packages can't be restored."
-        printf "%s"                                 "The script will force-disable the apps instead of uninstalling them"
+        printf "%s"                                 "The script will force-disable the apps instead of uninstalling them,"
         printf "%s\n\n"                             "so that you can restore them if needed"
         printf "%s "                                "If you still want to force-uninstall the apps, type '1' ('0' otherwise):"
 

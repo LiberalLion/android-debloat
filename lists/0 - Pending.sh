@@ -56,7 +56,7 @@ declare -a pending=(
 	"com.sonymobile.home.product.res.overlay"
 	"com.sonymobile.swiqisystemservice"
 
-	############# HUAWAI ##############
+	############# HUAWEI ##############
 
 	############## NOKIA ##############
 	# Nokia users: Please give the apk. I can't find them on the web.

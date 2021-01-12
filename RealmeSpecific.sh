@@ -56,3 +56,4 @@
    adb shell pm uninstall -k --user 0 com.ted.number
    adb shell pm uninstall -k --user 0 com.tencent.soter.soterserver
    adb shell pm uninstall -k --user 0 com.google.android.projection.gearhead
+   adb shell pm uninstall -k --user 0 com.oppo.qualityprotect
