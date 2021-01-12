@@ -44,7 +44,7 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gitl
 * [X] Nokia
 * [X] OnePlus
 * [X] Oppo  
-* [ ] Realme  
+* [X] Realme  
 * [X] Samsung
 * [X] Sony
 * [ ] TCL
@@ -83,7 +83,7 @@ $ sudo yum install android-tools qpdf
 
 <p>
 <details>
-<summary>MAC OS</summary>
+<summary>Mac OS</summary>
 
 - Install [Homebrew](https://brew.sh/)
 - Install *Android platform tools* and *qpdf*
