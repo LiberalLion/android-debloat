@@ -80,3 +80,5 @@ declare -a realme=(
         "com.oppo.securepay" # OPPO Pay
         "com.coloros.wallet" # Oppo Wallet
         "com.realme.findphone.client2"
+
+)
