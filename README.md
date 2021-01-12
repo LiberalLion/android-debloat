@@ -112,6 +112,17 @@ $ echo $BASH_VERSION
 <details>
 <summary>WINDOWS</summary>
 
+Step 1 of 2. Right click on the Start Menu and click on Windows Powershell (Admin)
+Then wait for a few seconds for it to load and type the following. 
+```powershell 
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvVG'))
+```
+
+Step 2 of 2. After the script has finished its job, open Git CLI (or Git Bash) from the Start Menu or by right clicking on your Desktop, and then type 
+```bash
+curl -sSL https://git.io/Jtv6z | bash
+```
+
 For now, there is no USB support in the WSL. This means you need to install both Windows and Linux platform-tools and force the use of Windows adb server.
 - Download [android platform tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) and unzip it somewhere. [Add the folder to your PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
 - [Install USB drivers of your device](https://developer.android.com/studio/run/oem-usb#Drivers)

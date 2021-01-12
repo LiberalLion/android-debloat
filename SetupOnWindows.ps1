@@ -56,7 +56,7 @@ function setupall {
 # }
 
 
-#curl -sSL https://git.io/JtvVG | bash
+# iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvVG'))
 
 installchoco
 
