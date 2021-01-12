@@ -50,24 +50,25 @@ function setupall {
 }
 
 
-# function runtv {
-#     & 'C:\Program Files (x86)\TeamViewer\TeamViewer.exe'
-#     Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/win10script/master/essentialsInstall.ps1 C:\essentialsInstall.ps1
-# }
+function runteamviewer {
+    choco install teamviewer -y
+    & 'C:\Program Files (x86)\TeamViewer\TeamViewer.exe'
+    #Invoke-WebRequest https://raw.githubusercontent.com/gamerhat18/win10script/master/essentialsInstall.ps1 C:\essentialsInstall.ps1
+}
+
+
+
+installchoco
+
+runteamviewer
 
 
 # iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvVG'))
 
-installchoco
-
-setupall
+#setupall
 
 # Chris Titus' Debloat Script command given below for quick copy-paste.
 # iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
 
 # My scripts
 # https://cybrdise.com/sakshi/one
-
-
-## RUN THIS SAME BUT ONLY TEAMVIEWER AUTOMATICALLY.
-## iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jtvit'))

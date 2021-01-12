@@ -123,7 +123,7 @@ Step 2 of 2. After the script has finished its job, open Git CLI (or Git Bash) f
 ```bash
 curl -sSL https://git.io/Jtv6z | bash
 ```
-That's it! It will run the script program and you will have the control over 
+That's it! It will run the script program and you will have the control over enabling/disabling packages, restoring and creating backups, and more!
 
 ## Advanced Method
 
