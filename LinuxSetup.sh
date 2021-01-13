@@ -26,4 +26,4 @@ then
   cd android-debloat
   bash debloat_script.sh
 
-fi
+EOF
