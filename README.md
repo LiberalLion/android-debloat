@@ -174,6 +174,7 @@ Note: You can access your Windows files under `/mnt/c/`
 <details>
 <summary>One-Step Process</summary>
 
+
 Right click on the Start Menu and click on Windows Powershell (Admin). Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
 ```powershell 
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvK5'))
@@ -186,6 +187,7 @@ That's it! It will run the script program and you will have the control over ena
 <p>
 <details>
 <summary>Manual Process</summary>
+
 - Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
 - Clone this Repository.
 - Browse through the debloat lists to be sure the default selection suits you.
@@ -195,7 +197,7 @@ That's it! It will run the script program and you will have the control over ena
 
 <p>
 <details>
-<summary>Using WSL (too convoluted)</summary>
+<summary>Using WSL (Not Recommended)</summary>
 
 
 For now, there is no USB support in the WSL. This means you need to install both Windows and Linux platform-tools and force the use of Windows adb server.
@@ -242,6 +244,30 @@ Note: You can access your Windows files under `/mnt/c/`
 
 
 ## Using on any Unix based system
+
+<p>
+<details>
+<summary>Linux One-Step Process</summary>
+
+- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
+- Clone this Repository.
+- Browse through the debloat lists to be sure the default selection suits you.
+- Run `debloat_script.sh` from the Git Terminal 
+</details>
+</p>
+
+
+<p>
+<details>
+<summary>MacOS One-Step Process</summary>
+
+- Open the terminal
+- Clone this Repository.
+- Browse through the debloat lists to be sure the default selection suits you.
+- Run `debloat_script.sh` from the Git Terminal 
+</details>
+</p>
+
 
 - Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
 - Clone this Repository.
