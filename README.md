@@ -114,7 +114,7 @@ $ echo $BASH_VERSION
 
 ## Easy Method
 
-Step 1 of 2. Right click on the Start Menu and click on Windows Powershell (Admin. Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
+Right click on the Start Menu and click on Windows Powershell (Admin). Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
 ```powershell 
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvK5'))
 ```
