@@ -5,7 +5,7 @@ then
   git clone https://github.com/gamerhat18/android-debloat/
   cd android-debloat
   bash debloat_script.sh
-fi
+
 
 
 if [ -f "/usr/bin/dnf" ]
@@ -15,7 +15,7 @@ then
   git clone https://github.com/gamerhat18/android-debloat/
   cd android-debloat
   bash debloat_script.sh
-fi
+
 
 
 if [ -f "/usr/bin/pacman" ]
@@ -25,4 +25,4 @@ then
   git clone https://github.com/gamerhat18/android-debloat/
   cd android-debloat
   bash debloat_script.sh
-fi
+
