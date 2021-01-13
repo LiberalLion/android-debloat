@@ -60,6 +60,9 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gith
 - Enable *Developer Options* on your smartphone.
 - Turn on *USB Debugging* from the developer panel.
 - From the settings, disconnect from any OEM accounts (when you delete OEM account package it could lock you on the lockscreen because the phone can't associate your identity anymore)
+
+### Install Dependencies
+
 <p>
 <details>
 <summary>LINUX</summary>
