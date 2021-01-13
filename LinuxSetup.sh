@@ -4,7 +4,7 @@ then
   cd ~
   git clone https://github.com/gamerhat18/android-debloat/
   cd android-debloat
-  bash debloat_script.sh
+  ./debloat_script.sh
 
 
 
