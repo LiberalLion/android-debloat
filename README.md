@@ -252,7 +252,7 @@ Note: You can access your Windows files under `/mnt/c/`
 - Copy and paste the following in the terminal and wait for it.
 ```bash 
 curl -sSL https://git.io/JtfRu | bash
-`` 
+```
 </details>
 </p>
 
@@ -265,7 +265,7 @@ curl -sSL https://git.io/JtfRu | bash
 - Copy and paste the following in the terminal and wait for it.
 ```bash 
 curl -sSL https://git.io/JtfRB | bash
-``
+```
 </details>
 </p>
 
