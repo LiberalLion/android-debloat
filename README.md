@@ -58,7 +58,7 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gith
 - **Read the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help)!**
 - **Do a proper backup of your data! You can never be too careful!**
 - Enable *Developer Options* on your smartphone.
-- Turn on *USB Debugging* from the developper panel.
+- Turn on *USB Debugging* from the developer panel.
 - From the settings, disconnect from any OEM accounts (when you delete OEM account package it could lock you on the lockscreen because the phone can't associate your identity anymore)
 <p>
 <details>
@@ -166,14 +166,13 @@ Note: You can access your Windows files under `/mnt/c/`
 </details>
 </p>
 
-## Using on Unix based systems
+## Using on any Unix based system
 
-- Download [the lastest release of Android Universal Debloater](https://gitlab.com/W1nst0n/universal-android-debloater/-/releases) 
+- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#how-to-use-it)
+- Clone this Repository.
 - Browse through the debloat lists to be sure the default selection suits you.
 - Run `debloat_script.sh` from a Unix terminal 
-```bash
-$ bash debloat_script.sh
-```
+
 
 **NOTE:** Chinese phones users may need to use the AOSP list for removing some stock apps because those chinese manufacturers (especially Xiaomi and Huawei) have been using the name of AOSP packages for their own (modified & closed-source) app.
 
