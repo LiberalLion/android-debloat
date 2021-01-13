@@ -17,12 +17,12 @@ In any case, you can NOT brick your device with this script! That's the main thi
 * [X] Quick search among all the packages of your phone
 * [X] Uninstallation of system/user packages (manually or with the debloat lists)
 * [X] Reinstallation of system packages (manually or with the debloat lists)
-* [X] ADB backup/restore (not really reliable, see the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ))
+* [X] ADB backup/restore (not really reliable, see the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help))
 * [X] Device brand detection and auto-selection of the appropriate manufacturer debloat list
 * [X] Logs in `debloated_packages.txt` and `remaining_packages.txt`.
 * [ ] Installation of alternative open-source apps replacing stock apps (list in the WIKI section) (WIP)
 
-NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ))
+NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help))
 
 ## Universal debloat lists 
 * [X] GFAM (Google/Facebook/Amazon/Microsoft)
@@ -43,19 +43,19 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gitl
 * [X] Motorola
 * [X] Nokia
 * [X] OnePlus
-* [X] Oppo  
-* [X] Realme  
+* [X] Oppo
+* [X] Realme
 * [X] Samsung
 * [X] Sony
 * [ ] TCL
-* [ ] Vivo  
+* [ ] Vivo
 * [ ] Wiko
 * [X] Xiaomi
 * [ ] ZTE
 
 
 ## How to use it 
-- **Read the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ)!**
+- **Read the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help)!**
 - **Do a proper backup of your data! You can never be too careful!**
 - Enable *Developer Options* on your smartphone.
 - Turn on *USB Debugging* from the developper panel.
