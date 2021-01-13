@@ -166,7 +166,8 @@ Note: You can access your Windows files under `/mnt/c/`
 </details>
 </p>
 
-##
+## Using on Unix based systems
+
 - Download [the lastest release of Android Universal Debloater](https://gitlab.com/W1nst0n/universal-android-debloater/-/releases) 
 - Browse through the debloat lists to be sure the default selection suits you.
 - Run `debloat_script.sh` from a Unix terminal 
