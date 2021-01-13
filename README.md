@@ -116,13 +116,9 @@ $ echo $BASH_VERSION
 
 Step 1 of 2. Right click on the Start Menu and click on Windows Powershell (Admin. Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
 ```powershell 
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvVG'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvK5'))
 ```
 
-Step 2 of 2. After the script has finished its job, open Git CLI (or Git Bash) from the Start Menu or by right clicking on your Desktop, and then type 
-```bash
-curl -sSL https://git.io/Jtv6z | bash
-```
 That's it! It will run the script program and you will have the control over enabling/disabling packages, restoring and creating backups, and more!
 
 ## Advanced Method

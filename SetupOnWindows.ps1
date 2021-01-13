@@ -60,8 +60,19 @@ function setupall {
 
 installchoco
 
+refreshenv
+
 setupall
 
+refreshenv
+
+cd C:
+
+git clone https://github.com/gamerhat18/android-debloat
+cd android-debloat
+adb devices
+
+.\debloat_script.sh
 # Chris Titus' Debloat Script command given below for quick copy-paste.
 # iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
 
