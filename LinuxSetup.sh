@@ -4,7 +4,7 @@ then
   cd ~
   git clone https://github.com/gamerhat18/android-debloat/
   cd android-debloat
-  ./debloat_script.sh
+  bash ./debloat_script.sh
   echo "lol"
   exit 0
 fi
