@@ -1,5 +1,5 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install --cask android-platform-tools bash qpdf git
+brew install --cask curl android-platform-tools bash qpdf git
 sudo echo "/usr/local/bin/bash" >> /etc/shells
 chsh -s /usr/local/bin/bash
 

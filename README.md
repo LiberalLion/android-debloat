@@ -62,7 +62,6 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gith
 - From the settings, disconnect from any OEM accounts (when you delete OEM account package it could lock you on the lockscreen because the phone can't associate your identity anymore)
 
 ### Install Dependencies
-<br>
 <p>
 <details>
 <summary>LINUX</summary>
@@ -249,10 +248,11 @@ Note: You can access your Windows files under `/mnt/c/`
 <details>
 <summary>Linux One-Step Process</summary>
 
-- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
-- Clone this Repository.
-- Browse through the debloat lists to be sure the default selection suits you.
-- Run `debloat_script.sh` from the Git Terminal 
+- Open the terminal application.
+- Copy and paste the following in the terminal and wait for it.
+```bash 
+curl -sSL https://git.io/JtfRu | bash
+`` 
 </details>
 </p>
 
@@ -261,10 +261,11 @@ Note: You can access your Windows files under `/mnt/c/`
 <details>
 <summary>MacOS One-Step Process</summary>
 
-- Open the terminal
-- Clone this Repository.
-- Browse through the debloat lists to be sure the default selection suits you.
-- Run `debloat_script.sh` from the Git Terminal 
+- Open the terminal application.
+- Copy and paste the following in the terminal and wait for it.
+```bash 
+curl -sSL https://git.io/JtfRB | bash
+``
 </details>
 </p>
 
