@@ -27,7 +27,7 @@ adb backup -apk -all -system -f "${PHONE:-phone}-`date +%Y%m%d-%H%M%S`.adb"
 You can adjust it to your needs. Here what's the parameters do :
 
 
- **apk|-noapk **: indicates if the *.apk files should be backed up (default is -noapk)
+**apk|-noapk** : indicates if the *.apk files should be backed up (default is -noapk)
 
 **shared|-noshared** : enable/disable backup of the device's shared storage / SD card contents (default is -noshared)
 
