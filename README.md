@@ -62,7 +62,7 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gith
 - From the settings, disconnect from any OEM accounts (when you delete OEM account package it could lock you on the lockscreen because the phone can't associate your identity anymore)
 
 ### Install Dependencies
-
+<br>
 <p>
 <details>
 <summary>LINUX</summary>
@@ -169,9 +169,81 @@ Note: You can access your Windows files under `/mnt/c/`
 </details>
 </p>
 
+## Using on Windows
+<p>
+<details>
+<summary>One-Step Process</summary>
+
+Right click on the Start Menu and click on Windows Powershell (Admin). Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
+```powershell 
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvK5'))
+```
+
+That's it! It will run the script program and you will have the control over enabling/disabling packages, restoring and creating backups, and more!
+</details>
+</p>
+
+<p>
+<details>
+<summary>Manual Process</summary>
+- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
+- Clone this Repository.
+- Browse through the debloat lists to be sure the default selection suits you.
+- Run `debloat_script.sh` from the Git Terminal 
+</details>
+</p>
+
+<p>
+<details>
+<summary>Using WSL (too convoluted)</summary>
+
+
+For now, there is no USB support in the WSL. This means you need to install both Windows and Linux platform-tools and force the use of Windows adb server.
+- Download [android platform tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) and unzip it somewhere. [Add the folder to your PATH](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
+- [Install USB drivers of your device](https://developer.android.com/studio/run/oem-usb#Drivers)
+- Check your device is detected :
+```batch
+> adb devices
+```
+
+- Install [WSL2 (Windows Subsystem for Linux)](https://itsfoss.com/install-bash-on-windows/) in order to be able to run bash scripts.
+- Install *Android platform tools* and *qpdf* from the Debian/Ubuntu shell
+```bash
+$ sudo apt update && sudo apt upgrade
+$ sudo apt install android-sdk-platform-tools qpdf
+```
+- Check the version of ADB on Linux & Windows
+```bash
+adb version
+```
+You need the same version otherwise it will not work. It's very likely your Ubuntu/Debian ADB version is older than the Windows one. 
+Download the lastest linux platform tools from Google and replace your adb binaries with the new ones :
+```bash
+$ wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+$ unzip platform-tools-latest-linux.zip
+$ sudo cp platform-tools/adb /usr/bin/adb
+$ sudo chmod 755 /usr/bin/adb
+$ adb version
+```
+Kill the WSL adb server:
+```bash
+$ adb kill-server
+```
+And start the ADB server on Windows: 
+```batch
+> adb kill-server
+> adb start-server
+> adb devices
+```
+Note: You can access your Windows files under `/mnt/c/`
+
+</details>
+</p>
+
+
 ## Using on any Unix based system
 
-- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#how-to-use-it)
+- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
 - Clone this Repository.
 - Browse through the debloat lists to be sure the default selection suits you.
 - Run `debloat_script.sh` from a Unix terminal 
