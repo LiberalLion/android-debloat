@@ -18,14 +18,14 @@ readonly Bold=$(tput bold)
 readonly nBold=$(tput sgr0)
 
 # Trap error
-trap 'catch $LINENO' ERR
-
-catch() {
-    (( $? == 0 )) && exit 0;
-    printf "\n\n${BRED}%s\n" "[EXIT TRAP] Hum... something is wrong."
-    printf "\n%s\n" "If you think this is a bug. Please report it :)"
-    printf "%s${NC}\n\n" "==> https://github.com/gamerhat18/android-debloat/-/issues"
-}
+# trap 'catch $LINENO' ERR
+# 
+# catch() {
+#     (( $? == 0 )) && exit 0;
+#     printf "\n\n${BRED}%s\n" "[EXIT TRAP] Hum... something is wrong."
+#     printf "\n%s\n" "If you think this is a bug. Please report it :)"
+#     printf "%s${NC}\n\n" "==> https://github.com/gamerhat18/android-debloat/issues"
+# }
 
 # Include debloat lists
 for file in ./lists/* ; do
