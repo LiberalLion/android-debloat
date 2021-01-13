@@ -64,7 +64,7 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gith
 ### Install Dependencies
 <p>
 <details>
-<summary>LINUX</summary>
+<summary>Linux</summary>
 
 - Install *Android platform tools* and *qpdf* on your PC :
 
@@ -112,7 +112,7 @@ $ echo $BASH_VERSION
 
 <p>
 <details>
-<summary>WINDOWS</summary>
+<summary>Windows</summary>
 
 ## Easy Method
 
@@ -269,14 +269,14 @@ curl -sSL https://git.io/JtfRB | bash
 </details>
 </p>
 
-
+## Manual Process
 - Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
 - Clone this Repository.
 - Browse through the debloat lists to be sure the default selection suits you.
 - Run `debloat_script.sh` from a Unix terminal 
 
 
-**NOTE:** Chinese phones users may need to use the AOSP list for removing some stock apps because those chinese manufacturers (especially Xiaomi and Huawei) have been using the name of AOSP packages for their own (modified & closed-source) app.
+**NOTE:** Chinese phones users may need to use the AOSP list for removing some stock apps because those chinese manufacturers (especially Xiaomi and Huawei) have been using the name of AOSP packages for their own (modified & closed-source) apps.
 
 **IMPORTANT NOTE:** You will have to run this script whenever your OEM push an update to your phone as some *uninstalled* system apps could be reinstalled.
 
