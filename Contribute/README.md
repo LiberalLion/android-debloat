@@ -1,5 +1,5 @@
 # How Do I Contribute?
-
+Thank You for taking out some time to help contribute to this awesome tool! We really appreciate 
 There are a lot of packages descriptions to improve. Some might be incorrect while some are nonexistent. You can donate a list of packages that your phone has, so that we can improve our prepared lists, ensuring that the lists stay relevant for as long as possible. If you want to donate package lists, we will be happy to include your name in the contributors list 😃
 
 Please read the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ).
