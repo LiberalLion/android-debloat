@@ -17,12 +17,12 @@ In any case, you can NOT brick your device with this script! That's the main thi
 * [X] Quick search among all the packages of your phone
 * [X] Uninstallation of system/user packages (manually or with the debloat lists)
 * [X] Reinstallation of system packages (manually or with the debloat lists)
-* [X] ADB backup/restore (not really reliable, see the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help))
+* [X] ADB backup/restore (not really reliable, see the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ))
 * [X] Device brand detection and auto-selection of the appropriate manufacturer debloat list
 * [X] Logs in `debloated_packages.txt` and `remaining_packages.txt`.
 * [ ] Installation of alternative open-source apps replacing stock apps (list in the WIKI section) (WIP)
 
-NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help))
+NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ))
 
 ## Universal debloat lists 
 * [X] GFAM (Google/Facebook/Amazon/Microsoft)
@@ -55,7 +55,7 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gith
 
 
 ## How to use it 
-- **Read the [FAQ](https://github.com/gamerhat18/android-debloat/tree/master/Help)!**
+- **Read the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ)!**
 - **Do a proper backup of your data! You can never be too careful!**
 - Enable *Developer Options* on your smartphone.
 - Turn on *USB Debugging* from the developer panel.
@@ -173,7 +173,7 @@ $ sudo apt install android-sdk-platform-tools qpdf
 adb version
 ```
 You need the same version otherwise it will not work. It's very likely your Ubuntu/Debian ADB version is older than the Windows one. 
-Download the lastest linux platform tools from Google and replace your adb binaries with the new ones :
+Download the lastest linux platform tools from Google & replace your adb binaries with the new ones :
 ```bash
 $ wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 $ unzip platform-tools-latest-linux.zip
@@ -239,4 +239,4 @@ curl -sSL https://git.io/JtfRB | bash
 
 Hey-hey-hey! Don't go away so fast! This is a community project. That means I need you! I'm sure you want to make this project better anyway.
 
-==> [How to contribute](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/home#how-to-contribute)
+==> [How to contribute](https://github.com/gamerhat18/android-debloat/tree/master/Contribute)
