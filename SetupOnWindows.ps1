@@ -45,7 +45,7 @@ function setupall {
     #curl -sSL https://git.io/JtvVG | bash
     $wshell.Popup("Now Please connect your phone via USB cable and enable USB DEBUGGING from Developer Settings.",0,"I Know",0x0)    
     $wshell.Popup("When asked, Allow the access on your phone and tick the box to always grant the privileges.",0,"Done",0x0) 
-    $wshell.Popup("Now right click on your desktop background and click 'Git Bash' or something similar. Wait for around a minute for it to load completely. then type the following in it without the quotes. 'curl -sSL https://git.io/JtvKJ | bash'",0,"Sure",0x0)    
+    #$wshell.Popup("Now right click on your desktop background and click 'Git Bash' or something similar. Wait for around a minute for it to load completely. then type the following in it without the quotes. 'curl -sSL https://git.io/JtvKJ | bash'",0,"Sure",0x0)    
     
 }
 
