@@ -1,0 +1,38 @@
+name: android-debloat
+
+title: My Awesome App.
+
+version: 0.1.0
+
+#icon: icon/snap-icon.png
+
+summary: Debloat your life. Start by debloating your Android Phone.
+
+description: |
+  is the ultimate tool for getting rid of the junk that might be shipped with your
+  phone, which is difficult without root. () lets you search for applications installed on your phone,
+  remove/reinstall them, and even create/restore backups. You can of course remove them entirely with 
+  root access if your phone has root access.
+  
+base: core18
+
+confinement: classic
+
+parts:
+  adb-access:
+    plugin: dump
+    #python-version: python3
+    source: .
+    #stage-packages:
+    #  - python-six
+      
+apps:
+  doit:
+    command: ./debloat_script.sh
+    
+  check:
+    command: /bin/adb devices
+
+plugs:
+  doit:
+    interface: adb-support

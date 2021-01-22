@@ -17,12 +17,12 @@ In any case, you can NOT brick your device with this script! That's the main thi
 * [X] Quick search among all the packages of your phone
 * [X] Uninstallation of system/user packages (manually or with the debloat lists)
 * [X] Reinstallation of system packages (manually or with the debloat lists)
-* [X] ADB backup/restore (not really reliable, see the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ))
+* [X] ADB backup/restore (not really reliable, see the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ))
 * [X] Device brand detection and auto-selection of the appropriate manufacturer debloat list
 * [X] Logs in `debloated_packages.txt` and `remaining_packages.txt`.
 * [ ] Installation of alternative open-source apps replacing stock apps (list in the WIKI section) (WIP)
 
-NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ))
+NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ))
 
 ## Universal debloat lists 
 * [X] GFAM (Google/Facebook/Amazon/Microsoft)
@@ -43,26 +43,28 @@ NB : It is NOT a real uninstallation for system apps (see the [FAQ](https://gitl
 * [X] Motorola
 * [X] Nokia
 * [X] OnePlus
-* [X] Oppo  
-* [X] Realme  
+* [X] Oppo
+* [X] Realme
 * [X] Samsung
 * [X] Sony
 * [ ] TCL
-* [ ] Vivo  
+* [ ] Vivo
 * [ ] Wiko
 * [X] Xiaomi
 * [ ] ZTE
 
 
 ## How to use it 
-- **Read the [FAQ](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/FAQ)!**
+- **Read the [FAQ](https://github.com/gamerhat18/android-debloat/wiki/FAQ)!**
 - **Do a proper backup of your data! You can never be too careful!**
 - Enable *Developer Options* on your smartphone.
-- Turn on *USB Debugging* from the developper panel.
+- Turn on *USB Debugging* from the developer panel.
 - From the settings, disconnect from any OEM accounts (when you delete OEM account package it could lock you on the lockscreen because the phone can't associate your identity anymore)
+
+### Install Dependencies
 <p>
 <details>
-<summary>LINUX</summary>
+<summary>Linux</summary>
 
 - Install *Android platform tools* and *qpdf* on your PC :
 
@@ -110,22 +112,46 @@ $ echo $BASH_VERSION
 
 <p>
 <details>
-<summary>WINDOWS</summary>
+<summary>Windows</summary>
 
-## Easy Method
+You will need Chocolatey to install Git and ADB Platform Tools from Google.
 
-Step 1 of 2. Right click on the Start Menu and click on Windows Powershell (Admin. Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
 ```powershell 
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvVG'))
+choco install adb git -y
 ```
 
-Step 2 of 2. After the script has finished its job, open Git CLI (or Git Bash) from the Start Menu or by right clicking on your Desktop, and then type 
-```bash
-curl -sSL https://git.io/Jtv6z | bash
+</details>
+</p>
+
+## Using on Windows
+<p>
+<details>
+<summary>One-Step Process</summary>
+
+
+Right click on the Start Menu and click on Windows Powershell (Admin). Click YES if something pops up. Then wait for a few seconds for it to load and paste the following. 
+```powershell 
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvK5'))
 ```
+
 That's it! It will run the script program and you will have the control over enabling/disabling packages, restoring and creating backups, and more!
+</details>
+</p>
 
-## Advanced Method
+<p>
+<details>
+<summary>Manual Process</summary>
+
+- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
+- Clone this Repository.
+- Browse through the debloat lists to be sure the default selection suits you.
+- Run `debloat_script.sh` from the Git Terminal 
+</details>
+</p>
+
+<p>
+<details>
+<summary>Using WSL (Not Recommended)</summary>
 
 
 For now, there is no USB support in the WSL. This means you need to install both Windows and Linux platform-tools and force the use of Windows adb server.
@@ -147,7 +173,7 @@ $ sudo apt install android-sdk-platform-tools qpdf
 adb version
 ```
 You need the same version otherwise it will not work. It's very likely your Ubuntu/Debian ADB version is older than the Windows one. 
-Download the lastest linux platform tools from Google and replace your adb binaries with the new ones :
+Download the lastest linux platform tools from Google & replace your adb binaries with the new ones :
 ```bash
 $ wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 $ unzip platform-tools-latest-linux.zip
@@ -171,14 +197,41 @@ Note: You can access your Windows files under `/mnt/c/`
 </p>
 
 
-- Download [the lastest release of Android Universal Debloater](https://gitlab.com/W1nst0n/universal-android-debloater/-/releases) 
+## Using on any Unix based system
+
+<p>
+<details>
+<summary>Linux One-Step Process</summary>
+
+- Open the terminal application.
+- Copy and paste the following in the terminal and wait for it.
+```bash 
+curl -sSL https://git.io/JtfRu | bash
+```
+</details>
+</p>
+
+
+<p>
+<details>
+<summary>MacOS One-Step Process</summary>
+
+- Open the terminal application.
+- Copy and paste the following in the terminal and wait for it.
+```bash 
+curl -sSL https://git.io/JtfRB | bash
+```
+</details>
+</p>
+
+## Manual Process
+- Install the dependencies [mentioned above](https://github.com/gamerhat18/android-debloat/#install-dependencies)
+- Clone this Repository.
 - Browse through the debloat lists to be sure the default selection suits you.
 - Run `debloat_script.sh` from a Unix terminal 
-```bash
-$ bash debloat_script.sh
-```
 
-**NOTE:** Chinese phones users may need to use the AOSP list for removing some stock apps because those chinese manufacturers (especially Xiaomi and Huawei) have been using the name of AOSP packages for their own (modified & closed-source) app.
+
+**NOTE:** Chinese phones users may need to use the AOSP list for removing some stock apps because those chinese manufacturers (especially Xiaomi and Huawei) have been using the name of AOSP packages for their own (modified & closed-source) apps.
 
 **IMPORTANT NOTE:** You will have to run this script whenever your OEM push an update to your phone as some *uninstalled* system apps could be reinstalled.
 
@@ -186,4 +239,4 @@ $ bash debloat_script.sh
 
 Hey-hey-hey! Don't go away so fast! This is a community project. That means I need you! I'm sure you want to make this project better anyway.
 
-==> [How to contribute](https://gitlab.com/W1nst0n/universal-android-debloater/-/wikis/home#how-to-contribute)
+==> [How to contribute](https://github.com/gamerhat18/android-debloat/tree/master/Contribute)

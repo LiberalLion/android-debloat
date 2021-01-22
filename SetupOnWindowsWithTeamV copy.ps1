@@ -62,7 +62,6 @@ installchoco
 
 runteamviewer
 
-
 # iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JtvVG'))
 
 #setupall

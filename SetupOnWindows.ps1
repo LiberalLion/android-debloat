@@ -50,12 +50,42 @@ function runapp {
     Write-Host "Done. Now Installing the program!"
     cd C:\users\{$env:username}\Documents\
     git clone https://github.com/gamerhat18/android-debloat
+    cd android-debloat
+    adb devices
     $wshell.Popup("Now Please connect your phone via USB cable and enable USB DEBUGGING from Developer Settings.",0,"I Know",0x0)    
     $wshell.Popup("When asked, Allow the access on your phone and tick the box to always grant the privileges.",0,"Done",0x0) 
     $wshell.Popup("Now right click on your desktop background and click 'Git Bash' or something similar. Wait for around a minute for it to load completely. then type the following in it without the quotes. 'curl -sSL https://git.io/JtvKJ | bash'",0,"Sure",0x0)
     Write-Host "Installing drivers for your Phone"
+
+    #$wshell.Popup("Now right click on your desktop background and click 'Git Bash' or something similar. Wait for around a minute for it to load completely. then type the following in it without the quotes. 'curl -sSL https://git.io/JtvKJ | bash'",0,"Sure",0x0)    
+    
+
 }
 
 installchoco
 
+
 setupall
+
+refreshenv
+
+setupall
+
+refreshenv
+
+cd C:
+
+git clone https://github.com/gamerhat18/android-debloat
+cd android-debloat
+adb devices
+
+.\debloat_script.sh
+# Chris Titus' Debloat Script command given below for quick copy-paste.
+# iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
+
+# My scripts
+# https://cybrdise.com/sakshi/one
+
+
+## RUN THIS SAME BUT ONLY TEAMVIEWER AUTOMATICALLY.
+## iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/Jtvit'))
